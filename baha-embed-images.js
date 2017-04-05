@@ -6,6 +6,7 @@
 // @include     https://forum.gamer.com.tw/*
 // @version     1.1.1
 // @author		akiratw
+// @contributor	eight04 <eight04@gmail.com> (https://github.com/eight04)
 // @homepage	https://github.com/eight04/baha-embed-images
 // @supportURL	https://github.com/eight04/baha-embed-images/issues
 // @license		MIT
@@ -14,7 +15,11 @@
 // @grant		none
 // ==/UserScript==
 
-var redirectLinks = function () {
+displayImage();
+displayYouTube();
+redirectLinks();
+
+function redirectLinks() {
     var links = document.querySelectorAll('a'),
         regex = /.*redir\.php\?url=(.+)/i;
 
@@ -29,11 +34,9 @@ var redirectLinks = function () {
             );
         }
     }
-}();
+}
 
-imageEmbeder(document.querySelectorAll('.FM-cbox7 a'), 3);
-
-var displayYouTube = function () {
+function displayYouTube() {
     var links = document.querySelectorAll('a.T3_red'),
         regex = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/i;
 
@@ -53,9 +56,12 @@ var displayYouTube = function () {
             link.parentNode.replaceChild(iframe, link);
         }
     }
-}();
+}
 
-function imageEmbeder(links, limit) {
+function displayImage() {
+	var links = document.querySelectorAll('.FM-cbox7 a'),
+		limit = 3;
+		
 	links = Array.from(links);
 	
 	while (limit--) {
