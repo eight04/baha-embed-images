@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        巴哈姆特哈拉開圖器 edited by eight
+// @name        巴哈姆特哈拉開圖器 fixed
 // @description	直接顯示巴哈姆特哈啦區文章的圖片和影片。跳過站外連結警告。
 // @namespace   eight04.blogspot.com
 // @include     http://forum.gamer.com.tw/*
