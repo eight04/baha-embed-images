@@ -13,6 +13,7 @@
 
 Install
 -------
+[Greasy Fork](https://greasyfork.org/zh-TW/scripts/28759-%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9%E5%93%88%E6%8B%89%E9%96%8B%E5%9C%96%E5%99%A8-fixed)
 
 License
 -------
