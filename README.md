@@ -21,6 +21,9 @@ License
 
 Changelog
 ---------
+
+* 1.2.1
+	- Fix: compat with [new design](https://user.gamer.com.tw/notice_detail.php?sn=562).
 * 1.2.0
 	- Fix include rules.
 	- Throttle image loads.
