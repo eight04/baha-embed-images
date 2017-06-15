@@ -37,16 +37,19 @@ function redirectLinks() {
 }
 
 function displayYouTube() {
-    var links = document.querySelectorAll('a.T3_red'),
+    var links = document.querySelectorAll('a'),
         regex = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/i;
 
     for (var i = links.length - 1; i >= 0; i--) {
         var link = links[i],
-            url = link.getAttribute('href'),
-            matches = url.match(regex);
+            url = link.getAttribute('href');
+			
+		if (!url) continue;
+		
+		var matches = url.match(regex);
 
         if (matches) {
-            url = 'http://www.youtube.com/embed/' + matches[1];
+            url = '//www.youtube.com/embed/' + matches[1];
             var iframe = document.createElement('iframe');
             iframe.setAttribute('width', '560');
             iframe.setAttribute('height', '315');
@@ -59,7 +62,7 @@ function displayYouTube() {
 }
 
 function displayImage() {
-	var links = document.querySelectorAll('.FM-cbox7 a'),
+	var links = document.querySelectorAll('a'),
 		limit = 3;
 		
 	links = Array.from(links);
@@ -75,7 +78,7 @@ function displayImage() {
 		
         var src = link.id || link.href;
             
-		if (!/(\.gif|\.jpg|\.jpeg|\.png|\.bmp)/i.test(src) || !link.textContent.includes("圖片")) {
+		if (!/(\.gif|\.jpg|\.jpeg|\.png|\.bmp)/i.test(src) || !/圖片|開圖/.test(link.textContent)) {
 			return deque();
 		}
 		
