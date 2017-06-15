@@ -91,6 +91,7 @@ function displayImage() {
 		link.onclick = null;
 		link.target = "_blank";
 		link.appendChild(img);
+		link.classList.remove("image-load");
 	}
 	
 	function handleLoad(e) {
