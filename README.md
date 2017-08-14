@@ -1,6 +1,16 @@
 巴哈姆特哈拉開圖器 fixed
 =====================
 
+2017.8.14
+---------
+
+現在巴哈已內建自動開圖功能︰
+
+![http://i.imgur.com/vwVdk7p.png](http://i.imgur.com/vwVdk7p.png)
+
+說明
+----
+
 由 [巴哈姆特哈拉開圖器](http://userscripts-mirror.org/scripts/review/142033) by akiratw 修改而來。
 
 > * 在未登入時也可以直接顯示 [巴哈姆特哈啦區](http://forum.gamer.com.tw/) 文章裡的圖片和 YouTube 影片。
