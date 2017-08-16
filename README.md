@@ -8,6 +8,8 @@
 
 ![http://i.imgur.com/vwVdk7p.png](http://i.imgur.com/vwVdk7p.png)
 
+userscript 中的開圖功能在新版介面下不會啟動，只剩移除站外連結重新導向的功能。
+
 說明
 ----
 
@@ -31,6 +33,9 @@ License
 
 Changelog
 ---------
+* 1.3.0
+	- Change: only displayImage() in old forum.
+	- Fix: remove onclick handler on redirected link.
 * 1.2.2
 	- Fix image style.
 * 1.2.1
