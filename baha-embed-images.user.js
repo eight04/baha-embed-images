@@ -15,8 +15,10 @@
 // @grant		none
 // ==/UserScript==
 
-displayImage();
-displayYouTube();
+if (getCookie("ckForumLegend") == "yes") {
+	displayImage();
+	displayYouTube();
+}
 redirectLinks();
 
 function redirectLinks() {
@@ -33,6 +35,9 @@ function redirectLinks() {
                 decodeURIComponent(url.replace(regex, '$1'))
             );
         }
+		if (link.onclick && link.matches("#BH-master article a")) {
+			link.onclick = null;
+		}
     }
 }
 
