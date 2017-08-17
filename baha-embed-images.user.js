@@ -15,6 +15,8 @@
 // @grant		none
 // ==/UserScript==
 
+/* globals getCookie */
+
 if (getCookie("ckForumLegend") == "yes") {
 	displayImage();
 	displayYouTube();
