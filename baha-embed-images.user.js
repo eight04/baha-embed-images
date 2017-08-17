@@ -4,7 +4,7 @@
 // @namespace   eight04.blogspot.com
 // @include     http://forum.gamer.com.tw/*
 // @include     https://forum.gamer.com.tw/*
-// @version     1.2.2
+// @version     1.3.0
 // @author		akiratw
 // @contributor	eight04 <eight04@gmail.com> (https://github.com/eight04)
 // @homepage	https://github.com/eight04/baha-embed-images
