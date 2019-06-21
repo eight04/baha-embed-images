@@ -45,7 +45,7 @@ function redirectLinks() {
 
 function displayYouTube() {
     var links = document.querySelectorAll('a'),
-        regex = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/i;
+        regex = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#&?]*).*/i;
 
     for (var i = links.length - 1; i >= 0; i--) {
         var link = links[i],
